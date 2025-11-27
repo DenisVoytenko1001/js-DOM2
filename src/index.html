@@ -3,23 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея Picsum</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Галерея фотографій</title>
 </head>
 <body>
     <header>
-        <h1>FOTO IMAGE LIST</h1>
+        <h1>API PHOTO GALLERY</h1>
     </header>
+    
     <main>
-        <div id="gallery" class="gallery"></div>
-        <div class="buttons">
-            <button id="loadMore">Завантажити ще 4 картинки</button>
-            <button id="clearGallery">Очистити галерею</button>
-            <button id="removeLast">Видалити останню картинку</button>
-            <button id="reverseGallery">Перевернути галерею</button>
-            <button id="shuffleGallery">Перемішати галерею</button>
+        <div class="container">
+            <div id="gallery" class="gallery"></div>
+
+            <div class="buttons">
+                <button id="loadMore" class="btn primary">Завантажити ще 4</button>
+                <button id="clearGallery" class="btn danger">Очистити галерею</button>
+                <button id="removeLast" class="btn warning">Видалити останню</button>
+                <button id="reverseGallery" class="btn secondary">Перевернути</button>
+            </div>
         </div>
     </main>
+
     <script src="script.js"></script>
 </body>
 </html>
